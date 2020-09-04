@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+            border: 5px solid red;
+            box-sizing: border-box;
+            width: 50%;
+        }
+        .outline {
+            outline: 35px solid blue;
+            border: 10px none yellow;
+            border-style: double; /*If a border style has gaps of some type, then the element’s background is visible through those gaps by default. */
+            box-sizing: border-box;
+            width: 50%;
+            padding: 20px;
+            margin: 20px;
+            background: pink;
+
+
+        }
+        .outline-and-border {
+            border: 5px solid red;
+            outline: 5px solid blue;
+            box-sizing: border-box;
+            width: 50%;
+        }
+        .parent {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis ut ipsum tempora inventore hic. Quo repellendus beatae aspernatur ratione?</p>
+    <div class="parent">
+        <p class="outline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis ut ipsum tempora inventore hic. Quo repellendus beatae aspernatur ratione?</p>
+    </div>
+    <p class="outline-and-border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis ut ipsum tempora inventore hic. Quo repellendus beatae aspernatur ratione?</p>
+
+</body>
+</html>
